@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FirstK</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="signup">SignUp</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_btn">Login</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="or_login_with">Or Login with</string>
+</resources>
