@@ -38,10 +38,11 @@ class MainActivity : AppCompatActivity() {
             if (email.isEmpty()) {
                 Toast.makeText(this, "Email should not be empty", Toast.LENGTH_SHORT).show()
             } else if (passw.isEmpty()) {
-                Toast.makeText(this, "Password should not be empty", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Password should not be empty $email", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Login Success...", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("name_s", email)
                 startActivity(intent)
             }
         }
