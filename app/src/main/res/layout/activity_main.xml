@@ -116,6 +116,7 @@
         android:orientation="vertical">
 
         <Button
+            android:onClick="openFrag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_red_light"

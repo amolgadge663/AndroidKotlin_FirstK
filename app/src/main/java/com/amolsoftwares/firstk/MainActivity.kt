@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -23,8 +24,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.i("TAG", "onCreate is called")
-        val makeText = Toast.makeText(this, "onCreate is called", Toast.LENGTH_SHORT)
-        makeText.show()
+        /*val makeText = Toast.makeText(this, "onCreate is called", Toast.LENGTH_SHORT)
+        makeText.show()*/
 
         login_btn = findViewById(R.id.login_btn)
         email_txt = findViewById<EditText>(R.id.email)
@@ -38,7 +39,8 @@ class MainActivity : AppCompatActivity() {
             if (email.isEmpty()) {
                 Toast.makeText(this, "Email should not be empty", Toast.LENGTH_SHORT).show()
             } else if (passw.isEmpty()) {
-                Toast.makeText(this, "Password should not be empty $email", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Password should not be empty $email", Toast.LENGTH_SHORT)
+                    .show()
             } else {
                 Toast.makeText(this, "Login Success...", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, SecondActivity::class.java)
@@ -52,30 +54,36 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         Log.i("TAG", "onStart is called")
-        Toast.makeText(this, "onStart is called", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "onStart is called", Toast.LENGTH_SHORT).show()
     }
 
     override fun onResume() {
         super.onResume()
         Log.i("TAG", "onResume is called")
-        Toast.makeText(this, "onResume is called", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "onResume is called", Toast.LENGTH_SHORT).show()
     }
 
     override fun onPause() {
         super.onPause()
         Log.i("TAG", "onPause is called")
-        Toast.makeText(this, "onPause is called", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "onPause is called", Toast.LENGTH_SHORT).show()
     }
 
     override fun onStop() {
         super.onStop()
         Log.i("TAG", "onPause is called")
-        Toast.makeText(this, "onPause is called", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "onPause is called", Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         Log.i("TAG", "onPause is called")
-        Toast.makeText(this, "onPause is called", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "onPause is called", Toast.LENGTH_SHORT).show()
+    }
+
+    fun openFrag(view: View) {
+        Toast.makeText(this, "you clicked on OpenFrag button", Toast.LENGTH_SHORT).show()
+        val i = Intent(this, FragActivity::class.java)
+        startActivity(i)
     }
 }
