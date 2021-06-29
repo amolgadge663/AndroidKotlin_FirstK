@@ -69,6 +69,12 @@ class MainActivity : AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
         val user = mAuth.currentUser
 
+        if (user != null) {
+            val intentD = Intent(this@MainActivity, DashboardActivity::class.java)
+            startActivity(intentD)
+            finish()
+        }
+
         /*Handler().postDelayed({
             if (user != null) {
                 val intentD = Intent(this@MainActivity, DashboardActivity::class.java)

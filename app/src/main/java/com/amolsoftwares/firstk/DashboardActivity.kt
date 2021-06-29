@@ -36,7 +36,7 @@ class DashboardActivity : AppCompatActivity() {
         nameTxt.text = currentUser?.displayName
         emailTxt.text = currentUser?.email
 
-        Glide.with(this).load(currentUser?.photoUrl).into(image)
+        Glide.with(this).load(currentUser?.photoUrl).centerCrop().into(image)
 
         signOutBtn.setOnClickListener {
             mAuth.signOut()

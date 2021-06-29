@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
 
-
     <ImageView
         android:id="@+id/profile_image"
         android:layout_width="150dp"
@@ -15,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/purple_700" />
 
     <TextView
         android:id="@+id/id"
@@ -24,6 +24,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="100dp"
         android:text="@string/id"
+        android:textColor="@color/txt_clr_heading"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
@@ -45,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/name"
+        android:textColor="@color/txt_clr_heading"
         app:layout_constraintStart_toStartOf="@+id/id_txt"
         app:layout_constraintTop_toBottomOf="@+id/id_txt" />
 
@@ -66,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/email_address"
+        android:textColor="@color/txt_clr_heading"
         app:layout_constraintStart_toStartOf="@+id/name_txt"
         app:layout_constraintTop_toBottomOf="@+id/name_txt" />
 

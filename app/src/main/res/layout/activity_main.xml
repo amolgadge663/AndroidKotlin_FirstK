@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FCFCFC"
+    android:background="@color/bgm_clr_main"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -28,6 +28,7 @@
             android:drawableStart="@drawable/ic_baseline_email_24"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
+            android:textColor="@color/black"
             android:textSize="@dimen/normal_size" />
 
         <EditText
@@ -38,6 +39,7 @@
             android:drawableStart="@drawable/ic_baseline_lock_24"
             android:hint="@string/password_hint"
             android:inputType="textPassword"
+            android:textColor="@color/black"
             android:textSize="@dimen/normal_size" />
 
         <LinearLayout
@@ -127,7 +129,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:drawableLeft="@drawable/ic_baseline_login_24"
-            android:text="@string/login_with_google" />
+            android:text="@string/login_with_google"
+            android:visibility="gone" />
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/sign_in_button"

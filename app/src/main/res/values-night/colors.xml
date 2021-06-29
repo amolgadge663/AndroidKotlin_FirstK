@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="txt_clr_heading">#FF03DAC5</color>
+    <color name="black">#FFFFFFFF</color>
+    <color name="bgm_clr_main">#4E4A4A</color>
+    <color name="blue_text">#FFFFFF</color>
+</resources>

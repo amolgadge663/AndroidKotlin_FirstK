@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue_text">#673AB7</color>
+    <color name="txt_clr_heading">#FF03DAC5</color>
+    <color name="bgm_clr_main">#FCFCFC</color>
 </resources>
